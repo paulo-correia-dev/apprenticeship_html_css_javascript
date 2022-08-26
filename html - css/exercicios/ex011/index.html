@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML 5</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Tente abrir esse site em dispositivos diferentes ou simplesmente diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagens Flexíveis"> 
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Vamos aprender reproduzir áudios utilizando HTML5.</p>
+    <!--<audio src="midia/Kazoom - Quincas Moreira.mp3" controls autoplay></audio>-->
+    <audio preload="metadata" controls> <!--loop, para repetir o áudio quando ele acabar.-->>
+        <source src="midia/PIANO - Piano.wav" type="audio/wav">
+        <source src="midia/Kazoom - Quincas Moreira.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não comsegue reproduzir nenhum tipo de áudio.
+            <a href="midia/musicas.rar" download="audios" type="application/vnd.rar">Clique aqui para baixar os arquivos. </a>.
+        </p>
+    </audio>
+    <audio preload="metadata">
+        <source src="midia/Skylines - Anno Domini Beats.mp3" type="audio/mpeg" controls>
+    </audio>
+    
+</body>
+</html>
